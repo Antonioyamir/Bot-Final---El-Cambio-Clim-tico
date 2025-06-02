@@ -24,4 +24,4 @@ Como instalar?:
 4. Ejecutar Archivo.
 Eso es todo! y pones los comando.
 Y guarda esto el token..
-token = 'MTI1OTk5MTIxNzM4NzYwNjExNw.GH99d4.8gTC1IaYxaOhGWOyLmHs5aeqUYVv7hSd3Z25SQ'
+token = 'MTI1OTk5MTIxNzM4NzYwNjExNw.GH99d4.8gTC1IaYxaOhGWOyLmHs5aeqUYVv7hSd3Z25S(Q), (Quita las parentesis para usar)
