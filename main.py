@@ -60,7 +60,7 @@ async def ayuda(ctx):
     embed.add_field(name="/cambioclimatico", value="Muestra información sobre el cambio climático", inline=False)
     embed.add_field(name="/causas", value="Muestra las causas de porque se origina el cambio climático", inline=False)
     embed.add_field(name="/efectos", value="Muestra que le sucede al planeta", inline=False)
-    embed.add_field(name="/solucionar", value="Muestra como proteger al planeta", inline=False)
+    embed.add_field(name="/soluciones", value="Muestra como proteger al planeta", inline=False)
     embed.add_field(name="/calentamiento", value="Muestra información sobre el calentamiento global", inline=False)
     embed.add_field(name="/adios", value="El bot se despide.", inline=False)
     await ctx.send(embed=embed)
@@ -150,8 +150,8 @@ async def catastrofes(ctx):
 @bot.command()
 async def causas(ctx):
     embed = discord.Embed(
-        title="Que son las catastrofes?",
-        description="Aquí tienes información sobre las catastrofes",
+        title="Cuales son las causas del cambio climático?",
+        description="Aquí tienes información sobre las causas del cambio climático",
         color=0x1ABC9C
     )
     embed.add_field(name="La generación de energía", value="La generación de energia a travéz de combustibles fosiles, provoca una gran cantidad de emisores, como el CO2 que son potentes gases invernaderos. A nivel global, un cuarto de electricidad proviene de energía renovable eólica y solares, que no contaminan al planeta", inline=False)
@@ -165,5 +165,56 @@ async def causas(ctx):
     embed.set_image(url="https://infomedioambiente.top/wp-content/uploads/cambio-climatico.jpg")
     await ctx.send(embed=embed)
 
+@bot.command()
+async def efectos(ctx):
+    embed = discord.Embed(
+        title="Cuales son los efectos del cambio climático?",
+        description="Aquí tienes información sobre los efectos del cambio climático",
+        color=0x1ABC9C
+    )
+    embed.add_field(name="Elevación de las temperaturas", value="Cada década es más cálida que la anterior, lo que incrementa olas de calor, enfermedades relacionadas con el calor e incendios forestales. El Ártico se calienta el doble que el promedio global.", inline=False)
+    embed.add_field(name="Tormentas más potentes", value="Las temperaturas más altas provocan más humedad y tormentas destructivas como huracanes y tifones, que afectan gravemente a comunidades y economías.", inline=False)
+    embed.add_field(name="Aumento de las sequías", value="La escasez de agua aumenta, afectando cultivos, ecosistemas y provocando tormentas de arena. Se expanden los desiertos y se reduce la tierra cultivable.", inline=False)
+    embed.add_field(name="Aumento del nivel del océano y calentamiento del agua", value="El océano se calienta y sube su nivel por la expansión del agua y el deshielo. También se acidifica por el CO₂, dañando la vida marina.", inline=False)
+    embed.add_field(name="Desaparición de especies", value="Muchas especies están en peligro de extinción debido a incendios, plagas y cambios extremos. Algunas se adaptan, pero otras no sobreviven.", inline=False)
+    embed.add_field(name="Escasez de alimentos", value="Las condiciones extremas afectan la pesca, agricultura y ganadería, lo que agrava la desnutrición, sobre todo en poblaciones vulnerables.", inline=False)
+    embed.add_field(name="Más riesgos para la salud", value="El cambio climático causa enfermedades, desplazamientos, estrés mental, hambre y presión sobre los sistemas sanitarios. Contribuye a millones de muertes anuales.", inline=False)
+    embed.add_field(name='Tu tambien puedes buscar más! por ejemplo yo me guie de este sitio, miralo!', value="https://www.un.org/es/climatechange/science/causes-effects-climate-change", inline=False)
+    embed.set_image(url="https://www.ultimasnotas.com/wp-content/uploads/2017/03/2.jpg")
+    await ctx.send(embed=embed)
 
-bot.run
+@bot.command()
+async def soluciones(ctx):
+    embed = discord.Embed(
+        title="Cuales son las soluciones del cambio climático?",
+        description="Aquí tienes información sobre las soluciones del cambio climático",
+        color=0x1ABC9C
+    )
+    embed.add_field(name="Compromiso Politico", value="Es necesario que todos los países realicen acuerdos y establezcan medidas de obligado cumplimiento para atajar el cambio climático. ", inline=False)
+    embed.add_field(name="Educación", value="Un pilar fundamental para conseguir con éxito un cambio de modelo es concienciar y sensibilizar a la población sobre las consecuencias del cambio climático.", inline=False)
+    embed.add_field(name="Energías", value="Otro cambio importante para ponerle solución al cambio climático es el cambio del modelo energético actual, abastecido con combustibles fósiles. Y se soluciona al alimentando nuestra demanda energética con energía procedente de fuentes limpias, como son la solar o la eólica.", inline=False)
+    embed.add_field(name="Movilidad", value="Actualmente, el transporte genera una parte de las emisiones GEI a la atmósfera. Una solución es la transición a una movilidad más descarbonizada, Ello se consigue optando por recursos limpios como la bicicleta u optar por vehículos eléctricos.", inline=False)
+    embed.add_field(name="Reducción de residuos", value="Los residuos se han convertido en un problema en el planeta. Tanto es así, que cada año acaban en el mar 8 toneladas de plásticos, Esto de ve favorecido por un modelo económico donde la mayoría de productos con plástico son de usar y tirar. Es por ello que una de las principales soluciones para el cambio climático, y los puedes hacer es promociónar de materiales biodegradables, o reciclar!", inline=False)
+    embed.add_field(name="Aumento de la protección de áreas", value="Como solución para proteger la biodiversidad actual en los diferentes rincones del planeta, es necesario que aumenten las zonas protegidas. Así, se preservarían los diferentes ecosistemas que hoy en día se ven vulnerables ante la constante intrusión humana.", inline=False)
+    embed.add_field(name="Consumo local", value="La promoción del consumo de proximidad debe encontrarse como prioridad en la agenda de todos los países. El abastecimiento de bienes de consumo de procedencia local contribuiría de forma muy eficiente a combatir el cambio climático, ya que las emisiones derivadas del transporte de estos bienes así como la producción de plásticos de embalaje.", inline=False)
+    embed.add_field(name='Tu tambien puedes buscar más! por ejemplo yo me guie de este sitio, miralo!', value="https://www.ecologiaverde.com/soluciones-para-el-cambio-climatico-3329.html", inline=False)
+    embed.set_image(url="https://eligenio.com/wp-content/uploads/2023/05/soluciones-para-el-cambio-climatico.jpg")
+    await ctx.send(embed=embed)
+
+
+@bot.command()
+async def calentamiento(ctx):
+    embed = discord.Embed(
+        title="El calentamiento global.",
+        description="Aquí tienes información sobre el calentamiento global",
+        color=0x1ABC9C
+    )
+    embed.add_field(name="Qué es", value="La definición del calentamiento global hace referencia al aumento de la temperatura media de los océanos y de la atmósfera terrestre, y actualmente ha sido alarmante a nivel mundial en las últimas décadas. ", inline=False)
+    embed.add_field(name="Causas", value="Incremento del efecto invernadero, Aumento de los gases de efecto invernadero, Incremento de las actividades humanas contaminantes, como los combustibles fosiles", inline=False)
+    embed.add_field(name="Consecuencias", value="Producen fenómenos meteorológicos extremos como fuertes sequías, olas de calor o lluvias torrenciales, la temperatura de los océanos se elevase, provocando su expansión, deshielo de los casquetes polares, desecación de las selvas, y provoca una aceleración de algunas de las extinciones de especies.", inline=False)
+    embed.add_field(name="Cómo podemos evitar", value="Reducir las emisiones de gases de efecto invernadero, Promover una dieta más sostenible, Reforestar y conservar los bosques, Reciclar y reducir residuos, Usar transporte sostenible, Mejorar la educación y la concienciación, Apoyar políticas verdes.", inline=False)
+    embed.add_field(name='Tu tambien puedes buscar más! por ejemplo yo me guie de este sitio, miralo!', value="https://www.ecologiaverde.com/calentamiento-global-que-es-causas-y-consecuencias-1095.html", inline=False)
+    embed.set_image(url="https://cdn0.ecologiaverde.com/es/posts/5/9/0/consecuencias_del_calentamiento_global_1095_2_600.webp")
+    await ctx.send(embed=embed)
+
+bot.run(token)
