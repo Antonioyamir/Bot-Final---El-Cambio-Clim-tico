@@ -1,7 +1,7 @@
 # Bot Final El Cambio Climatico
-Este es un bot de discord en donde aprenderas nuevas cosas sobre el cambio climático! conoceras, muchas catastofres, y  las causas y consecuencias, y por ultimo, Como solucionarlo ;)
+Este es un bot de discord en donde aprenderas nuevas cosas sobre el cambio climático! conoceras, muchas catastofres, y  las causas y consecuencias, y por ultimo, Como solucionarlo 😀
 
-Comandos:
+Comandos: 🌲
 /hola
 /clima
 /ayuda
@@ -17,11 +17,11 @@ Comandos:
 /calentamiento
 /adios
 
-Como instalar?:
+Como instalar?: 🍃
 1. Instalar discord (libreria): pip install discord
 2. Instalar requests: pip install requests
 3. Instalar pyttsx3: pip install pyttsx3
 4. Ejecutar Archivo.
 Eso es todo! y pones los comando.
 Y guarda esto el token..
-token = 'MTI1OTk5MTIxNzM4NzYwNjExNw.GH99d4.8gTC1IaYxaOhGWOyLmHs5aeqUYVv7hSd3Z25S(Q), (Quita las parentesis para usar)
+token = 'MTI1OTk5MTIxNzM4NzYwNjExNw.GH99d4.8gTC1IaYxaOhGWOyLmHs5aeqUYVv7hSd3Z25S(Q), (Quita las parentesis para usar) 🌎
