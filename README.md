@@ -18,8 +18,9 @@ Comandos: 🌲
 /adios
 
 Como instalar?: 🍃
-1. Instalar discord (libreria): pip install discord
-2. Instalar requests: pip install requests
-3. Instalar pyttsx3: pip install pyttsx3
-4. Ejecutar Archivo.
+1. Crea tu token o bot
+2. Instalar discord (libreria): pip install discord
+3. Instalar requests: pip install requests
+4. Instalar pyttsx3: pip install pyttsx3
+5. Ejecutar Archivo.
 Eso es todo! y pones los comando.
